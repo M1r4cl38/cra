@@ -1,0 +1,29 @@
+footer.container {
+    padding-top: 0;
+}
+
+.row.socials {
+    display: flex;
+    gap: 0.5em;
+    border-bottom: 0.1px solid #fff;
+    padding: 0.5em 0; 
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+}
+
+.fa {
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 5s;
+}
+
+.fa:hover {
+    background-color: #fff;
+    color: var(--main-color);
+    transition: all 1s;
+}

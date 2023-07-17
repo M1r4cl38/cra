@@ -1,0 +1,23 @@
+.hero {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.main-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.main-description {
+    font-size: 1.3rem;
+    text-align: center;
+}

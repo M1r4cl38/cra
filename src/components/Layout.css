@@ -1,0 +1,119 @@
+.container {
+    width: 100%;
+    padding: 3.7rem 0;
+}
+
+.container > .row-short {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    width: 38rem;
+    margin: 0 calc((100% - 37.5rem)/2);
+}
+
+.container > .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.75rem 0;
+    justify-content: center;
+    width: 62rem;
+    margin: 0 calc((100% - 62rem)/2);
+}
+
+.container .column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.column.right-column {
+    width: 40%;
+    margin-left: auto;
+}
+
+@media (max-width: 68rem) {
+    .container > .row {
+        width: 50rem;
+        margin: calc((100% - 50rem)/2);
+    }
+}
+
+@media (max-width: 56rem) {
+    .container > .row {
+        width: 38rem;
+        margin: calc((100% - 38rem)/2);
+    }
+}
+
+@media (max-width: 44rem) {
+    .container > .row,
+    .container > .row-short {
+        width: 25rem;
+        margin: calc((100% - 25rem)/2);
+    }
+    .container .column,
+    .column.right-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 28rem) {
+    .container {
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+    .container > .row,
+    .container > .row-short {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+footer.container .row-short {
+    
+    color: #fffa;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+footer .row-short a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo {
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.text-trio > p {
+    position: relative;
+}
+.text-trio > p::after {
+    content: "";
+    display: none;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -0.9rem;
+    transform: translateY(-50%);
+}
+
+.text-trio > p:last-child::after {
+    display: none;
+}
+
+@media (min-width: 44rem) {
+    .text-trio {
+        display: flex;
+        gap: 1.7rem;
+    }
+
+    .text-trio > p::after {
+        display: block;
+    }
+}
